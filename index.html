@@ -9,11 +9,12 @@
 </head>
 <body>
     <div id="app">
-        <ul v-for="element in randomEmail">
-            <li>
+        <ul v-if="randomEmail.length ===10">
+            <li v-for="element in randomEmail">
                 {{element}}
               </li>
         </ul>
+        <p v-else>Loading...</p>
         
     </div>
 
